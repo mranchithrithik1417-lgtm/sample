@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website</title>
+    <style>
+        /* Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7fb;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #04AA6D;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #e8edf4;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(120deg, #04AA6D, #058457);
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #04AA6D;
+            padding: 0.7rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #e8edf4;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Content Section Grid */
+        .services {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            min-width: 250px;
+        }
+        .card h3 {
+            color: #04AA6D;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: 4rem;
+        }
+
+        /* Responsive Breakpoint */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Simplifies mobile presentation */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">MyWebsite</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Showcase Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to My First Web Page</h1>
+        <p>This is a completely functional, clean, and modern layout built with pure HTML and internal CSS properties.</p>
+        <a href="#services" class="btn">Get Started</a>
+    </section>
+
+    <!-- Features / Services Section -->
+    <main class="container" id="services">
+        <h2 style="text-align: center;">Our Features</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Responsive Design</h3>
+                <p>The layout wraps automatically on smaller mobile viewport sizes seamlessly.</p>
+            </div>
+            <div class="card">
+                <h3>Clean HTML5</h3>
+                <p>Built using modern structural semantic code blocks like header, nav, main, and footer.</p>
+            </div>
+            <div class="card">
+                <h3>No External Assets</h3>
+                <p>Everything you need to view this project correctly is contained entirely within this single snippet.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
